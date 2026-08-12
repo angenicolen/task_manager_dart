@@ -1,17 +1,30 @@
-# task_manager_dart
+# Task Manager Dart
 
-A new Flutter project.
+Application de gestion de tâches en ligne de commande développée en Dart.
 
-## Getting Started
+## Fonctionnalités
 
-This project is a starting point for a Flutter application.
+- Ajouter une tâche
+- Définir une priorité : low, medium ou high
+- Ajouter une date limite optionnelle
+- Lister les tâches
+- Trier les tâches par priorité ou par date
+- Marquer une tâche comme terminée
+- Supprimer une tâche
+- Sauvegarder les tâches dans un fichier JSON
+- Gérer les erreurs avec des exceptions personnalisées
 
-A few resources to get you started if this is your first Flutter project:
+## Structure
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- `bin/task_manager.dart` : application CLI
+- `lib/task.dart` : modèle Task, héritage et exceptions
+- `lib/repository.dart` : interface générique Repository
+- `lib/task_repository.dart` : gestion et sauvegarde JSON
+- `test/task_test.dart` : tests unitaires
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Lancer l'application
+
+Dans le terminal :
+
+```bash
+dart run bin/task_manager.dart
